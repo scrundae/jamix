@@ -4,6 +4,7 @@ using System.Text;
 using System.IO;
 using Sys = Cosmos.System;
 using System.ComponentModel;
+using System.Runtime.InteropServices;
 
 namespace rootrain
 {
@@ -19,6 +20,7 @@ namespace rootrain
             Console.WriteLine("To use the filesystem, type startfs");
             Console.WriteLine("For help, type help");
             Console.WriteLine("\n");
+            
         }
         int syslt;
         protected override void Run()
