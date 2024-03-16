@@ -120,6 +120,18 @@ namespace rootrain
                         }
                     }
                 }
+                else if (ans.Contains("cd ")) {
+                    string nans = ans.Replace("cd ", "");
+                    string path = dir + nans;
+                    if (Directory.Exists(path)) {
+                        dir = path;
+                    }
+                    else {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("Unknown directory!");
+                        Console.ForegroundColor = ConsoleColor.White;
+                    }
+                }
                 else {
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Command error!");
